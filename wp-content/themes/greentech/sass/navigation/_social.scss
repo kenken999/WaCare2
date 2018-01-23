@@ -1,0 +1,21 @@
+.jetpack-social-navigation {
+	.menu {
+		margin-bottom: 0;
+	}
+}
+
+div.sharedaddy {
+	margin-top: 25px;
+}
+
+div.sharedaddy .sd-sharing {
+	h3.sd-title {
+		margin-top: 7px;
+		margin-right: 15px;
+		float: left;
+		@include font-size(1.4);
+		&::before {
+			display: none;
+		}
+	}
+}

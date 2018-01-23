@@ -1,0 +1,79 @@
+.jp-relatedposts {
+	margin: 0px 0 25px;
+	.jp-relatedposts-post {
+		transition: all .3s;
+		.jp-relatedposts-post-title {
+			padding-top: 15px;
+			a {
+				@include font-size(1.4);
+				line-height: 1.5;
+				text-align: left;
+				color: $color__black;
+			}
+			a:hover {
+				color: $color__link-hover;
+			}
+		}
+		.jp-relatedposts-post-date {
+			padding-top: 3px;
+			@include font-size(1.3);
+		}
+		.jp-relatedposts-post-context {
+			display: none;
+		}
+	}
+	h3.jp-relatedposts-headline {
+		padding: 0 0 10px;
+		display: inline-block;
+		float: left;
+		@include font-size(0.9);
+		font-weight: 700;
+		font-family: inherit;
+		width: 100%;
+		&:before {
+			margin-bottom: 32px;
+		}
+		em {
+			font-weight: bold;
+			@include font-size(1.4);
+			line-height: 1.93;
+			text-align: left;
+			color: $color__black;
+			&:before {
+				margin-bottom: 0.5em;
+			}
+		}
+	}
+	.jp-relatedposts-post-a:hover {
+		opacity: 1;
+	}
+}
+
+.entry-content #jp-relatedposts {
+	padding-top: 3em;
+	.jp-relatedposts-items {
+		.jp-relatedposts-post .jp-relatedposts-post-title a:hover,
+		.jp-relatedposts-post:hover .jp-relatedposts-post-title a {
+			text-decoration: none;
+		}
+	}
+	.jp-relatedposts-items-visual {
+		.jp-relatedposts-post {
+			opacity: 1;
+			h4.jp-relatedposts-post-title a {
+				@include font-size(1.6);
+				font-weight: bold;
+			}
+			.jp-relatedposts-post-date {
+				@include font-size(1.4);
+			}
+			img.jp-relatedposts-post-img,
+			span {
+				width: 100%;
+				&:hover {
+					opacity: .8;
+				}
+			}
+		}
+	}
+}

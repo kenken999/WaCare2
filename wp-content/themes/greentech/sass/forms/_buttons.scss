@@ -1,0 +1,90 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 2px solid;
+	border-color: $color__border-button;
+	background: $color__background-button;
+	@include font-size(1.4);
+	font-weight: 700;
+	line-height: 1;
+	padding: 14px 30px;
+	border-radius: 26px;
+	color: $color__white;
+	transition: all .3s ease 0s;
+	&:hover {
+		border-color: $color__main-hover;
+		background: $color__main-hover;
+		color: $color__white;
+	}
+	&:active,
+	&:focus {
+		border-color: $color__main-hover;
+	}
+}
+
+.btn {
+	display: inline-block;
+	font-weight: 700;
+	border-radius: 99px;
+	white-space: nowrap;
+	text-align: center;
+	padding: 14px 30px;
+	transition: all .3s ease 0s;
+	text-transform: uppercase;
+}
+
+.btn-primary {
+	color: $color__white;
+	background-color: $color__main;
+	display: inline-block;
+	&:hover,
+	&:active,
+	&:focus {
+		color: $color__white;
+		background: $color__main-hover;
+	}
+}
+
+.btn-outline-primary {
+	color: $color__white;
+	background: $color__main;
+	border-color: $color__main;
+	border-top-right-radius: 0;
+    padding: 10px 25px;
+	&:hover,
+	&:active,
+	&:focus {
+		color: $color__main;
+		background: $color__white;
+	}
+}
+
+.archive .btn {
+	border-top-right-radius: 0;
+	float: left;
+}
+
+
+.go-back-home {
+	display: inline-block;
+	margin: 50px 0 70px;
+}
+
+.slick-arrow {
+	position: absolute;
+	z-index: 10;
+	border-radius: 0;
+	width: 45px;
+	height: 40px;
+	@include font-size(1.6);
+	padding: 0;
+}
+
+@media(max-width: 767px) {
+	.btn {
+		border: 1px solid $color__border-button;
+		padding: 10px 25px;
+		@include font-size(1.4);
+	}
+}

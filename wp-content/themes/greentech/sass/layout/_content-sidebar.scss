@@ -1,0 +1,34 @@
+.site-content .content-area {
+	width: (770/1170) * 100%;
+	order: 1;
+}
+
+.site-content .widget-area {
+	width: (340/1170) * 100%;
+	order: 2;
+	margin-left: auto;
+}
+
+.site-main {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.site-header + .site-content {
+	margin-top: 80px;
+	&:not(.featured-posts) {
+		margin-top: 0;
+	}
+}
+
+.no-sidebar .content-area {
+	margin: 0 auto;
+}
+
+@media (max-width: 991px){
+	.site-content{
+		.content-area,.widget-area{
+			width: 100%;
+		}
+	}
+}

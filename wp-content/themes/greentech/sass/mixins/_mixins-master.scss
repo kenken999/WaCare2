@@ -1,0 +1,76 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 10) * 1px;
+	font-size: $sizeValue / 1.6 * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: '';
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Fontawesome style
+@mixin fa-icon() {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome; // shortening font declaration
+	font-size: inherit; // can't have font-size inherit on line above, so need to override
+	text-rendering: auto; // optimizelegibility throws things off #1094
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// Tag link style.
+@mixin tags-links() {
+	color: $color__white;
+	background: $color__tag-cloud;
+	padding: 5px 14px;
+	text-transform: capitalize;
+	display: inline-block;
+	border-radius: 3px;
+	&:hover {
+		background: rgba(197, 197, 197, 0.6);
+	}
+}
+
+// Place element on a circle.
+@mixin on-circle($item-count, $circle-size, $item-width, $item-height) {
+    position: relative;
+    width: $circle-size;
+    height: $circle-size;
+    padding: 0;
+    border-radius: 50%;
+    list-style: none;
+    > * {
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        width: $item-width;
+        height: $item-height;
+        margin: -($item-width / 2) ;
+        $angle: (360 / $item-count);
+        $rot: 0;
+        &:nth-of-type(1) {
+            transform: rotate(300deg) translate($circle-size / 2) rotate(-300deg);
+        }
+        @for $i from 2 through $item-count {
+            &:nth-of-type(#{$i}) {
+                transform: rotate($rot * 1deg) translate($circle-size / 2) rotate($rot * -1deg);
+            }
+            $rot: $rot + $angle;
+        }
+    }
+}

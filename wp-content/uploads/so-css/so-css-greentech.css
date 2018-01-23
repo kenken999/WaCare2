@@ -1,0 +1,157 @@
+.main-navigation li > a {
+  color: #ffffff;
+}
+
+.site-logo .site-title a {
+  color: #ffffff;
+}
+
+.statistics-item * {
+  color: #999999;
+  text-align: center;
+}
+
+.footer-widgets {
+  background-color: #Ef8326;
+}
+
+.bottombar {
+  background-color: #Ef8326;
+}
+
+.bottombar .container {
+  border-top-color: #Ef8326;
+}
+
+.page .entry-content {
+  color: #Ef8326;
+}
+
+.main-navigation ul ul :hover > a {
+  color: #a89e9e;
+}
+
+.featured-block {
+  background-color: #e3b48d;
+}
+
+.btn-primary:hover {
+  background-color: #e8893c;
+}
+
+.btn.btn-primary {
+  background-color: #Ef8326;
+}
+
+button:hover {
+  background-color: #ef8326;
+  color: #ffffff;
+}
+
+.menu-toggle {
+  color: #ffffff;
+}
+
+.fa.fa-search {
+  color: #Ef8326;
+}
+
+.wpcf7-form-control.wpcf7-submit {
+  background-color: #Ef8326;
+  border-color: #Ef8326;
+}
+
+input[type="submit"]:hover {
+  background-color: #cc7935;
+  border-color: #Ef8326;
+}
+
+.main-navigation .current_page_ancestor > a {
+  background-color: #Ef8326;
+}
+
+.main-navigation ul.menu .sub-menu li:hover > a {
+  color: #cc7935;
+}
+
+.main-navigation ul.menu .sub-menu li a {
+  color: #Ef8326;
+}
+
+#menu-item-261.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children.menu-item-261 {
+  color: #ffffff;
+}
+
+.main-navigation li:hover > a {
+  background-color: #ffffff;
+  color: #ef8326;
+}
+
+#masthead.site-header {
+  background-color: #Ef8326;
+}
+
+.main-navigation div > ul > .current_page_item > a {
+  background-color: #ffffff;
+  color: #ef8326;
+}
+
+.header-content {
+  background-color: #Ef8326;
+}
+
+.site-header .header-content > .container {
+  background-color: #ef8326;
+}
+
+#primary.content-area {
+  width: 100%;
+}
+
+#content.site-content.container {
+  width: 100%;
+  max-width: 100%;
+  display: inline;
+}
+
+#content.site-content {
+  max-width: 100%;
+  width: 100%;
+  display: inline;
+}
+
+.section--features.container {
+  max-width: 100%;
+  display: inline;
+  width: 100%;
+}
+
+#content.site-content::before {
+  display: none;
+  width: 0px;
+  height: 0px;
+}
+
+#content.site-content::after {
+  display: none;
+  width: 0px;
+  height: 0px;
+}
+
+.section--features.container::before {
+  max-width: 100%;
+  display: none;
+  width: 0px;
+  height: 0px;
+}
+
+.section--features.container::after {
+  max-width: 100%;
+  display: inline;
+  width: 100%;
+}
+
+.wpcf7-form {
+  padding-left: 20%;
+  padding-right: 20%;
+}

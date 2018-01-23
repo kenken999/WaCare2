@@ -1,0 +1,16 @@
+.section--features {
+    margin: 105px auto 115px;
+    text-align: center;
+    .section-title {
+        margin-bottom: 20px;
+    }
+    .features-content p:first-child {
+        @include font-size(1.7);
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .btn-primary {
+        margin-top: 10px;
+    }
+}

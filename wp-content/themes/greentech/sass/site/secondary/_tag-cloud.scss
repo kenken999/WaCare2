@@ -1,0 +1,21 @@
+.tagcloud {
+	list-style: none;
+	a {
+		@include tags-links();
+		margin: 0 7px 9px 0;
+		line-height: 20px;
+	}
+}
+
+.widget {
+	.tagcloud {
+		background: $color__background-widget;
+		padding: 25px 26px 19px;
+	}
+}
+
+.widget-footer .tagcloud {
+	a:hover {
+        background: $color__bgtag-hover;
+	}
+}

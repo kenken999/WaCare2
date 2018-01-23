@@ -1,0 +1,62 @@
+.project-nav {
+	background: $color__background-pre;
+	text-align: center;
+	margin-top: -80px;
+	margin-bottom: 80px;
+	ul {
+		margin-bottom: 0;
+		li {
+			display: inline-block;
+			a {
+				@include font-size(1.5);
+				font-weight: 400;
+				display: block;
+				padding: 12px 15px;
+			}
+		}
+		li.active a {
+			color: $color__main;
+			background: $color__white;
+		}
+	}
+}
+
+.section--projects .section-title {
+	margin-bottom: 40px;
+}
+
+.post-type-archive-jetpack-portfolio .project-nav ul li:first-child a {
+	color: $color__main;
+	background: $color__white;
+}
+
+.section--archive-project {
+	margin-bottom: 68px;
+	.row {
+		#infinite-handle {
+			width: 100%;
+		}
+	}
+}
+
+.col-2 .project .project-info {
+	p.desc,
+	.editor-emphasized {
+		@include font-size(1.4);
+	}
+}
+
+@media(max-width: 1439px) {
+	.section--projects {
+		padding-top: 60px;
+	}
+}
+
+@media(max-width: 767px) {
+	.section--archive-project {
+		margin-bottom: 0;
+	}
+	.project-nav {
+		margin-top: -35px;
+	}
+}

@@ -1,0 +1,28 @@
+.ultimate-fonts-element {
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+.ultimate-fonts-column {
+	float: left;
+	margin-right: 30px;
+}
+.ultimate-fonts-element__forced {
+	text-align: center;
+}
+.ultimate-fonts-element__forced input {
+	margin-top: 8px;
+}
+.ultimate-fonts-element__label input {
+	width: 100%;
+}
+.ultimate-fonts-element__title {
+	font-weight: bold;
+	margin-bottom: 3px;
+	display: block;
+}
+.ultimate-fonts-element .description {
+	display: block;
+}
+.ultimate-fonts-element__delete.button {
+	margin-top: 22px;
+}

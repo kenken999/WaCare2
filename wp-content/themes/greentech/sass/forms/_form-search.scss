@@ -1,0 +1,13 @@
+.form-control {
+	font-weight: 400;
+	color: $color__link;
+	background-color: $color__white;
+	border: 1px solid $color__sub;
+	width: 100%;
+	padding: 8px 12px;
+	transition: all .3s ease 0s;
+}
+.page-content .form-search .form-control,
+.site-search .form-control {
+	border-color: $color__sub;
+}

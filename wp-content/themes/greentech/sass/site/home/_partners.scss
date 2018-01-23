@@ -1,0 +1,18 @@
+.section--partners {
+	padding: 80px 0;
+	.slick-track{
+		margin: 0 auto;
+	}
+}
+
+@media(max-width: 1439px) {
+	.section--partners {
+    	padding: 60px 0;
+	}
+}
+
+@media(max-width: 767px){
+	.section--partners {
+    	padding: 40px 0;
+	}
+}

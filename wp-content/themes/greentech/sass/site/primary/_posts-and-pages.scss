@@ -1,0 +1,277 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 60px;
+	display: inline-block;
+	width: 100%;
+}
+
+.single .hentry {
+	margin: 0 0 40px;
+	word-wrap: break-word;
+}
+
+.byline,
+.updated:not(.published) {
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.single,
+.page {
+	.entry-content {
+		margin-top: 0;
+		p {
+			margin-top: 0;
+		}
+	}
+	.entry-media {
+		padding-bottom: 20px;
+	}
+}
+
+.entry-content br {
+	display: block;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.wp-caption {
+	max-width: 100%;
+}
+
+.entry-meta {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 17px;
+	a {
+		text-transform: capitalize;
+		color: $color__link-hover;
+	}
+	span {
+		color: $color__gray60;
+		display: inline;
+		.icon {
+			margin-right: 6px;
+		}
+		+ span::before {
+			content: '\f111';
+			@include fa-icon();
+			@include font-size(0.6);
+			display: inline-block;
+			vertical-align: middle;
+			padding: 0 12px;
+		}
+	}
+}
+
+.entry-title {
+	@include font-size(2.8);
+	margin-bottom: 13px;
+	margin-top: 0;
+	line-height: (37/28);
+}
+
+.entry-footer {
+	.cat-links {
+		color: $color__gray60;
+		margin-right: 10px;
+		display: block;
+		margin-bottom: 10px;
+		a {
+			color: $color__link-hover;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.tags-links {
+		color: $color__gray60;
+		margin-right: 10px;
+		a {
+			margin: 0 0 9px 8px;
+			line-height: 1.35714;
+			@include tags-links;
+		}
+	}
+	&::before,
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+.entry-share {
+	margin-bottom: 20px;
+	span {
+		color: $color__gray60;
+	}
+	a {
+		@include font-size(1.6);
+		color: $color__white;
+		background: $color__link-hover;
+		border: 1px solid $color__link-hover;
+		border-radius: 50%;
+		display: inline-block;
+		width: 34px;
+		height: 34px;
+		line-height: 2;
+		text-align: center;
+		margin-left: 5px;
+		&:hover {
+			color: $color__link-hover;
+			background: $color__white;
+			border-color: $color__link-hover;
+		}
+	}
+}
+
+.search,
+.blog,
+.archive {
+	article {
+		position: relative;
+		.entry-footer {
+			margin-top: 42px;
+			position: relative;
+			min-height: 39px;
+			&::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 1px;
+				background: $color__sub;
+				top: -42px;
+				left: 0;
+			}
+		}
+	}
+	.hentry {
+		margin: 0 0 60px;
+		word-wrap: break-word;
+		&::first-child {
+			.entry-media {
+				margin-top: 0px;
+			}
+		}
+	}
+	.entry-title {
+		margin-top: 0;
+	}
+	.entry-media {
+		&:first-child {
+			margin-top: 0;
+		}
+		margin-bottom: 24px;
+		margin-top: 20px;
+	}
+	.entry-content {
+		margin: 0;
+		iframe {
+			width: 100%;
+		}
+	}
+	.has-link-more + .entry-footer {
+		& > * {
+			float: right;
+		}
+	}
+	.comments-link {
+		float: left;
+		padding-bottom: 15px;
+		a {
+			color: $color__gray;
+			text-transform: uppercase;
+			margin-top: .75rem;
+			position: relative;
+			bottom: 3px;
+		}
+		.icon {
+			@include font-size(1.8);
+			vertical-align: top;
+			margin-right: 6px;
+			color: $color__main;
+		}
+	}
+	.link-more {
+		margin: 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 9;
+	}
+	.edit-link {
+		float: left;
+		clear: both;
+		height: 0px;
+	}
+}
+
+.hentry iframe,
+.hentry object,
+.hentry video,
+.widget-content iframe,
+.widget-content object,
+.widget-content iframe {
+	display: block;
+	border: none;
+}
+
+.jetpack-the-excerpt .link-more,
+.jetpack-the-content .link-more {
+	bottom: -95px;
+}
+
+body.author-hidden .posted-on:before {
+	display: none;
+}
+
+.single article .entry-content {
+	@include font-size(1.6);
+}
+
+@media(max-width: 767px) {
+	.entry-title {
+		@include font-size(2);
+	}
+	.hentry {
+		margin: 0 0 40px;
+	}
+	.entry-meta {
+		margin-bottom: 14px;
+	}
+	.blog .entry-title,
+	.archive .entry-title {
+		margin-top: 5px;
+	}
+}
+
+@media(max-width: 575px) {
+	.entry-title {
+		@include font-size(1.6);
+		margin-bottom: 10px;
+	}
+	.entry-meta {
+		margin-bottom: 10px;
+	}
+	.blog .entry-title,
+	.archive .entry-title {
+		margin-top: 0px;
+	}
+}

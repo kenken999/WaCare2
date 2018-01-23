@@ -1,0 +1,27 @@
+.widget_calendar {
+	.calendar_wrap {
+		padding: 20px 25px;
+	}
+
+	table {
+		margin-bottom: 0;
+		line-height: 30px;
+		caption {
+			margin-bottom: 15px;
+		}
+		tbody {
+			text-align: center;
+			a {
+				color: $color__main;
+			}
+		}
+		th {
+			color: $color__main;
+		}
+		tfoot {
+			#next {
+				text-align: right;
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+.section--blog {
+    padding: 76px 0 40px;
+    img {
+        width: 100%;
+        max-height: 230px;
+    }
+}
+
+.section-blog__item {
+    margin-bottom: 50px;
+}
+
+.section-blog__title {
+    margin: 18px 0 12px;
+    @include font-size(1.8);
+}
+
+@media (max-width: 1439px) {
+    .section--blog {
+        padding-top: 60px;
+    }
+}

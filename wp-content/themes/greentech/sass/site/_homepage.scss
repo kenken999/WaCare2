@@ -1,0 +1,52 @@
+.site-slider-for .name,
+.site-slider-nav .slide-inner {
+	font-family: $font__main;
+	text-transform: uppercase;
+}
+
+.section-title {
+	@include font-size(3.5);
+	font-weight: 700;
+	text-align: center;
+	position: relative;
+	margin-bottom: 4.375rem;
+	text-transform: uppercase;
+}
+
+@media(max-width: 1439px) {
+	.section-title {
+		margin-bottom: 3rem;
+	}
+}
+
+/* Services*/
+
+@import "home/features";
+
+/* Services*/
+
+@import "home/services";
+
+/* Statistics*/
+
+@import "home/statistics";
+
+/* Testimonial*/
+
+@import "home/testimonial";
+
+/*Project*/
+
+@import "home/project";
+
+/*Posts*/
+
+@import "home/blog";
+
+/*Call to action*/
+
+@import "home/cta";
+
+/*Partners*/
+
+@import "home/partners";

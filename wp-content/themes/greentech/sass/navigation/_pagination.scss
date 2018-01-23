@@ -1,0 +1,37 @@
+nav.navigation.pagination {
+	margin-bottom: 100px;
+	.nav-links {
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+	}
+	.page-numbers {
+		width: 45px;
+		height: 45px;
+		@include font-size(2);
+		font-weight: bold;
+		text-align: center;
+		color: $color__white;
+		line-height: 45px;
+		background: $color__main;
+		margin-bottom: 20px;
+		margin-right: 5px;
+	}
+	.page-numbers.current,
+	.page-numbers:hover {
+		background: $color__main-hover;
+		color: $color__white;
+	}
+}
+
+@media(max-width: 767px) {
+	nav.navigation.pagination {
+		margin-bottom: 60px;
+	}
+}
+
+@media(max-width: 575px) {
+	nav.navigation.pagination {
+		margin-bottom: 40px;
+	}
+}
